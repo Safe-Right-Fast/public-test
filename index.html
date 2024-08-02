@@ -40,6 +40,15 @@ const registerServiceWorker = async () => {
         }
 
         registerServiceWorker();
+
+        window.addEventListener(
+  "message",
+  (event) => {
+    document.body.innerHTML += event.data;
+
+  },
+  false,
+);
     </script>
     <a href="https://saferightfast.quickbase.com/db/main?a=signIn&nexturl=https%3A%2F%2Fsaferightfast.quickbase.com%2Fdb%2Fbt698i8m6%3Fapptoken%3Ddxdqhk2wetze2hv7asa73iqj8%26a%3DAPI_ImportFromCSV%26clist%3D6.60.9%26records_csv%3D502%252C6SL3210-1PE12-3UL1%252C1%250A502%252C6SL3210-1PE13-2UL1%252C2%250A502%252C6SL3210-1PE14-3UL1%252C4%250A502%252C6SL3210-1PE16-1UL1%252C5%250A502%252C6SL3210-1PE18-0UL1%252C2%250A502%252C6SL3210-1PE21-1UL0%252C2%250A502%252C6SL3210-1PE21-4UL0%252C2%250A502%252C6SL3210-1PE21-8UL0%252C20%26rdr%3Dhttps%253A%252F%252Fsaferightfast.quickbase.com%252Fdb%252Fbt697fxr3%253Fapptoken%253Ddxdqhk2wetze2hv7asa73iqj8%2526a%253DAPI_EditRecord%2526_fid_233%253D%2526rid%253D502%2526rdr%253Dhttps%25253A%25252F%25252Fsaferightfast.quickbase.com%25252Fdb%25252Fbt697fxr3%25253Fa%25253Ddr%252526rid%25253D502">Hello World</a>
 </body>
